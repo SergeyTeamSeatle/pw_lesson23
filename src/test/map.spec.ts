@@ -68,7 +68,6 @@ describe("Tutte le strande partono da Roma",function (){
         await map.goto()
         await map.stayOnWeb()
         await map.goOnColosseo()
-       // expect( await map.howMuchToBicycling.textContent()).to.eql("4 Tage")
         expect( await map.howMuchToDriving.textContent()).to.eql("33 ч")
         expect( await map.howMuchToTransit.textContent()).to.eql("2 дн")
         expect( await map.howMuchToWalking.textContent()).to.eql("24 дн")
